@@ -5,7 +5,7 @@ public class CalcNum {
         System.out.println(10*2); // 20
         System.out.println(8/2); // 4
         System.out.println(Math.PI); // Pi
-        System.out.println((Math.floor(Math.PI))); // 3.0
+        System.out.println((Math.floor(Math.PI))); // 3.0 => Math is Class
         System.out.println((Math.ceil(Math.PI))); // 4.0
     }
 }
