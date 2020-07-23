@@ -6,6 +6,5 @@ public class Variable {
         System.out.println(b); // 3.3
         String c = "Hello World"; // String
         System.out.println(c); // Hello World
-        
     }
 }
