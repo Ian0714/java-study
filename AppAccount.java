@@ -23,8 +23,11 @@ public class AppAccount {
         System.out.println("Total : "+ total);
         System.out.println("Expense : "+ expense);
         System.out.println("Income : "+ income);
-        System.out.println("Dividend : "+ divendRates[0]);
-        System.out.println("Dividend : "+ divendRates[1]);
-        System.out.println("Dividend : "+ divendRates[2]);
+
+        int i = 0;
+        while(i < divendRates.length){
+            System.out.println("Dividend "+ i + " : "+ (income*divendRates[i]));
+            i += 1;
+        }
     }
 }
