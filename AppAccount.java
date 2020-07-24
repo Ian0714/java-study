@@ -6,22 +6,16 @@ public class AppAccount {
         double expense = 0.3 * sup;
         double income = sup - expense;
 
-        double divend1;
-        double divend2;
-        double divend3;
+        double[] divendRates = new double[3];
 
         if(income >= 10000){
-            divend1 = income * 0.5;
-            divend2 = income * 0.3;
-            divend3 = income * 0.2;
-        } else if(income >= 5000) {
-            divend1 = income * 0.8;
-            divend2 = income * 0.1;
-            divend3 = income * 0.1;
+            divendRates[0] = income * 0.5;
+            divendRates[1] = income * 0.3;
+            divendRates[2] = income * 0.2;
         } else {
-            divend1 = income * 1;
-            divend2 = income * 0;
-            divend3 = income * 0;
+            divendRates[0] = income * 1;
+            divendRates[1] = income * 0;
+            divendRates[2] = income * 0;
         }
 
         System.out.println("Value of Supply : "+ sup);
@@ -29,8 +23,8 @@ public class AppAccount {
         System.out.println("Total : "+ total);
         System.out.println("Expense : "+ expense);
         System.out.println("Income : "+ income);
-        System.out.println("Dividend : "+ divend1);
-        System.out.println("Dividend : "+ divend2);
-        System.out.println("Dividend : "+ divend3);
+        System.out.println("Dividend : "+ divendRates[0]);
+        System.out.println("Dividend : "+ divendRates[1]);
+        System.out.println("Dividend : "+ divendRates[2]);
     }
 }
