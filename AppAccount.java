@@ -1,8 +1,8 @@
-public class AppAccount {
+class Account {
     public static double sup;
     public static double vatrate;
     public static double expenserate;
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         sup = 10000.0;
         vatrate = 0.1;
         expenserate = 0.3;
@@ -30,7 +30,7 @@ public class AppAccount {
             System.out.println("Dividend "+ i + " : "+ (income*divendRates[i]));
             i += 1;
         }
-    }
+    }*/
 
     public static void print(){
         System.out.println("Value of Supply : "+ sup);
@@ -54,5 +54,12 @@ public class AppAccount {
 
     public static double VAT() {
         return sup * vatrate;
+    }
+}
+
+public class AppAccount {
+    public static void main(String[] args) {
+        Account.sup = 10000.0;
+        Account.print();
     }
 }
